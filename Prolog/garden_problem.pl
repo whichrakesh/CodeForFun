@@ -1,0 +1,27 @@
+arrangement(S):-
+	S = [_,_,_,_,_,_,_,_],
+	member([_,daniella,black,shopass,_,_,_,_],S),
+	member([_,_,_,_,fiat,red,theseadog,_],S),
+	member([owen,victoria,_,_,_,brown,_,_],S),
+	member([stan,hannah,horricks,_,_,white,_,_],S),
+	member([_,jenny,smith,warehouse,wartburg,_,_,_],S),
+	member([alexander,monica,_,_,_,_,_,grandfatherjoseph],S),
+	member([mathew,_,_,_,_,pink,maulatkagabriela,_],S),
+	member([oto,irene,_,accountant,_,_,_,_],S),	
+	member([_,_,_,_,trabant,_,_,wewerefive],S),	
+	member([_,_,cermaks,ticketcollector,_,_,shedstoat,_],S),
+	member([_,_,kuril,doctor,_,_,_,slovakojudge],S),
+	member([paul,_,_,_,_,green,_,_],S),
+	member([_,veronica,dvorak,_,_,blue,_,_],S),
+	member([rick,_,_,_,ziguli,_,slovakojudge,_],S),
+	member([_,_,_,_,_,_,damecommisssar,maulatkagabriela],S),
+	member([_,_,_,_,dacia,violet,_,_],S),
+	member([_,_,_,teacher,_,_,_,damecommisssar],S),	
+	member([_,_,_,agriculturalist,moskvic,_,_,_],S),	
+	member([_,pamela,_,renault,_,_,grandfatherjoseph,X],S),	
+	member([_,_,zajac,_,_,_,X,_],S),
+	member([robert,_,_,_,_,yellow,_,themoderncomedy],S),
+	member([_,_,swain,shopper,_,_,_,_],S),	
+	member([_,_,_,_,skoda,_,themoderncomedy,_],S).	
+
+goal(X):- arrangement(S),member([X,_,_,_,_,violet,_,_], S).	
